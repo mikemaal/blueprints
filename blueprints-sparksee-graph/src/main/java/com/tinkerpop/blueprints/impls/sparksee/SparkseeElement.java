@@ -111,6 +111,7 @@ class SparkseeElement implements Element {
 			com.sparsity.sparksee.gdb.Type tdata = graph.getRawGraph().getType(
 					type);
 			return (T) tdata.getName();
+			
 		}
 		int attr = graph.getRawGraph().findAttribute(getObjectType(), key);
 		if (attr == com.sparsity.sparksee.gdb.Attribute.InvalidAttribute) {
